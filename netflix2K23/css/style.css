@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: #000;
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.btn {
+  background-color: #e50914;
+  border: 1px solid #e50914;
+  border-radius: 5px;
+  color: #fff;
+  height: 55px;
+  width: 140px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #9b070f;
+  border: 1px solid #9b070f;
+  transition: all 0.3s ease-in-out 0;
+}
+.btn-sm {
+  height: 30px;
+  width: 100px;
+  margin-left: 5px;
+}
+.header-area {
+  background-image: url("/assets/imgs/bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1325px, 100vw);
+  height: 70vh;
+  position: relative;
+}
+.slider-area {
+  height: 70vh;
+  width: 100%;
+  opacity: 0.4;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+}
+nav {
+  max-width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  position: relative;
+  z-index: 10;
+  padding-top: 40px;
+}
+nav > a > img {
+  width: 100px;
+  height: 30px;
+}
+nav > div > button:first {
+  background: transparent;
+  border: 1px solid #fff;
+}
+.hero-area {
+  height: 100%;
+  max-width: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+  padding: 0 15px;
+  margin-bottom: -100px;
+}
+.slider-text {
+  text-align: center;
+}
+.slider-text > h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+.slider-text > span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  position: relative;
+  z-index: 10;
+}
+.email-form-area {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+.email-form > input {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+  height: 55px;
+  width: 330px;
+  padding: 15px;
+  margin: 10px 5px 5px 0px;
+}
+.email-form > button {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 10px 0 0 5px;
+}
+.separator {
+  background-color: rgb(75, 74, 74);
+  height: 5px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 11;
+}
+
+/* First-sec */
+.first-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.first-sec-text {
+  width: 50%;
+}
+.first-sec-text p {
+  margin-top: 20px;
+}
+.sec-img {
+  width: 50%;
+  position: relative;
+}
+.sec-img img {
+  width: 100%;
+}
+.sec-video video {
+  position: absolute;
+  width: 70%;
+  height: 53%;
+  top: 20.9%;
+  left: 14.5%;
+  padding: 0px;
+  z-index: -10;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.faq {
+  background: black;
+  color: white;
+  padding: 34px;
+}
+
+.faqbox:hover {
+  background-color: #414141;
+  color: white;
+}
+
+.faqbox svg {
+  filter: invert(1);
+}
+
+.faqbox {
+  transition: all 1s ease-out;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 70vw;
+  margin: 34px auto;
+  cursor: pointer;
+}
+
+footer {
+  max-width: 70vw;
+  margin: auto;
+}
+.container {
+  margin: 50px 5px;
+}
+.foot-text {
+  margin: 0 10px 30px 10px;
+}
+.foot-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.foot-content ul {
+  list-style: none;
+  margin: 0;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.foot-content ul li {
+  margin-top: 10px;
+}
+.foot-content ul li a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+.foot-content ul li a:hover {
+  transition: all 0.1s linear 0s;
+  border-bottom: 1px solid transparent;
+}
